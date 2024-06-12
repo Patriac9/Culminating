@@ -1,5 +1,5 @@
 import javax.swing.*;
-import Elements.*;
+
 public class Main {
 
     static final String TITLE="Periodic table";
@@ -9,6 +9,7 @@ public class Main {
         MainFrame.setSize(1080,720);
         MainFrame.setVisible(true);
 
-        ImageIcon iconimage;
+        ImageIcon iconimage=new ImageIcon("Icon.png");
+        MainFrame.setIconImage(iconimage.getImage());
     }
 }
