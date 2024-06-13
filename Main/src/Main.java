@@ -15,7 +15,7 @@ public class Main {
         // Scale the image to a new size as needed and improve quality
         Image newIconImage = originalImage.getScaledInstance(256, 256, Image.SCALE_SMOOTH);
         MainFrame=new Frame(TITLE,newIconImage,Color.BLACK,Width,Height,true,false);
-        MainFrame.setLayout(null);
+        MainFrame.setLayout(new FlowLayout());
         MainPage mainPage=new MainPage(MainFrame);
     }
 }

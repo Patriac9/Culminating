@@ -1,14 +1,14 @@
 package Elements;
-import Core.*;
+
 import Core.Frame;
 
 import java.awt.*;
 
-public class Hydrogen extends Element{
+public class Potassium extends Element{
     private Frame CurrentFrame;
-    public Hydrogen(Frame OwnedFrame){
+    public Potassium(Frame OwnedFrame){
         CurrentFrame=OwnedFrame;
-        CurrentFrame.getContentPane().removeAll();
+        Category=2;
         switch (Category){
             case 0: baseColor=new Color(253, 205, 127);
                 break;
@@ -18,6 +18,8 @@ public class Hydrogen extends Element{
                 baseColor=new Color(253, 133, 160);
                 break;
         }
+        CurrentFrame.getContentPane().removeAll();
         CurrentFrame.getContentPane().setBackground(baseColor);
+
     }
 }

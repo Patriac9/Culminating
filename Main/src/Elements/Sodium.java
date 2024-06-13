@@ -1,14 +1,15 @@
 package Elements;
-import Core.*;
+
 import Core.Frame;
 
 import java.awt.*;
 
-public class Hydrogen extends Element{
+public class Sodium extends Element{
     private Frame CurrentFrame;
-    public Hydrogen(Frame OwnedFrame){
+    public Sodium(Frame OwnedFrame){
         CurrentFrame=OwnedFrame;
         CurrentFrame.getContentPane().removeAll();
+        Category=2;
         switch (Category){
             case 0: baseColor=new Color(253, 205, 127);
                 break;

@@ -4,11 +4,11 @@ import Core.Frame;
 
 import java.awt.*;
 
-public class Hydrogen extends Element{
+public class Helium extends Element{
     private Frame CurrentFrame;
-    public Hydrogen(Frame OwnedFrame){
+    public Helium(Frame OwnedFrame){
+        Category=1;
         CurrentFrame=OwnedFrame;
-        CurrentFrame.getContentPane().removeAll();
         switch (Category){
             case 0: baseColor=new Color(253, 205, 127);
                 break;
@@ -18,6 +18,7 @@ public class Hydrogen extends Element{
                 baseColor=new Color(253, 133, 160);
                 break;
         }
+        CurrentFrame.getContentPane().removeAll();
         CurrentFrame.getContentPane().setBackground(baseColor);
     }
 }
