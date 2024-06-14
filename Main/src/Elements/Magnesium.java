@@ -1,16 +1,12 @@
 package Elements;
 import Core.*;
-import Core.Frame;
-
-import java.awt.*;
-
-public class Hydrogen extends Element{
+public class Magnesium extends Element{
     private Frame CurrentFrame;
-    public Hydrogen(Frame OwnedFrame){
+    public Magnesium(Frame OwnedFrame){
         CurrentFrame=OwnedFrame;
-        CurrentFrame.getContentPane().removeAll();
-        Category=0;
+        Category=3;
         baseColor=setColor(Category);
         CurrentFrame.getContentPane().setBackground(baseColor);
+        CurrentFrame.getContentPane().removeAll();
     }
 }

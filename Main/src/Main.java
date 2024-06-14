@@ -17,5 +17,6 @@ public class Main {
         MainFrame=new Frame(TITLE,newIconImage,Color.BLACK,Width,Height,true,false);
         MainFrame.setLayout(new FlowLayout());
         MainPage mainPage=new MainPage(MainFrame);
+        MainFrame.repaint();
     }
 }
