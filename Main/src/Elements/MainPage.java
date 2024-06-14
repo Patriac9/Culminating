@@ -18,6 +18,8 @@ public class MainPage {
     private JButton Na;
     private JButton K;
     private JButton Rb;
+    private JButton Fr;
+    private JButton Be;
     public MainPage(Frame OwnedFrame){
         CurrentFrame=OwnedFrame;
                 //Main Pages
@@ -73,10 +75,21 @@ public class MainPage {
         Rb.setMargin(new Insets(0,0,0,0));
         Rb.addActionListener(rb->new Rubidium(CurrentFrame));
 
+        Fr=new JButton("87 Fr");
+        Fr.setFocusable(false);
+        Fr.setForeground(Color.WHITE);
+        Fr.setBackground(Color.GRAY);
+        Fr.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Fr.setBounds(InitX,InitY+GapY*5,WID,LEN);
+        Fr.setMargin(new Insets(0,0,0,0));
+        Be=new JButton("04 Be");
+        Be.setFocusable(false);
         CurrentFrame.add(K);
         CurrentFrame.add(Na);
         CurrentFrame.add(Li);
         CurrentFrame.add(H);
         CurrentFrame.add(Rb);
+        CurrentFrame.add(Fr);
+        CurrentFrame.add(Be);
     }
 }
