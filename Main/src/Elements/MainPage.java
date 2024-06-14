@@ -82,8 +82,12 @@ public class MainPage {
         Fr.setFont(new Font("Arial",H.getFont().getStyle(),17));
         Fr.setBounds(InitX,InitY+GapY*5,WID,LEN);
         Fr.setMargin(new Insets(0,0,0,0));
+
         Be=new JButton("04 Be");
         Be.setFocusable(false);
+        Be.setForeground(Color.WHITE);
+        Be.setBackground(Color.GRAY);
+        Be.setFont(new Font("Arial",H.getFont().getStyle(),17));
         CurrentFrame.add(K);
         CurrentFrame.add(Na);
         CurrentFrame.add(Li);
