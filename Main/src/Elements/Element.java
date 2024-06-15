@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Element {
+    public void Display(){}
     public final int Alkali=1;
     final int Alkaline=3;
     public JButton Back=new JButton("< Back");
@@ -25,5 +26,7 @@ public class Element {
                 col=new Color(116, 216, 246);
         }
         return col;
+
     }
+
 }

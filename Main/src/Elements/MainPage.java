@@ -130,6 +130,7 @@ public class MainPage {
         Ca.setBounds(InitX+GapX,InitY+GapY*3,WID,LEN);
         Ca.setFont(new Font("Arial",H.getFont().getStyle(),17));
         Ca.setMargin(new Insets(0,0,0,0));
+        Ca.addActionListener(ca->new Calcium(CurrentFrame));
 
         Sr=new JButton("38 Sr");
         Sr.setFocusable(false);
@@ -138,6 +139,7 @@ public class MainPage {
         Sr.setBounds(InitX+GapX,InitY+GapY*4,WID,LEN);
         Sr.setFont(new Font("Arial",H.getFont().getStyle(),17));
         Sr.setMargin(new Insets(0,0,0,0));
+        Sr.addActionListener(sr->new Strongtium(CurrentFrame));
 
         Ba=new JButton("56 Ba");
         Ba.setFocusable(false);
