@@ -31,6 +31,16 @@ public class MainPage {
     private JButton V;
     private JButton Cr;
     private JButton Mn;
+    private JButton Fe;
+    private JButton Co;
+    private JButton Ni;
+    private JButton Cu;
+    JButton Sn;
+    JButton Ga;
+    JButton Ge;
+    JButton As;
+    JButton Se;
+    JButton Br;
     public MainPage(Frame OwnedFrame){
         CurrentFrame=OwnedFrame;
         CurrentFrame.getContentPane().setBackground(Color.BLACK);
@@ -197,6 +207,62 @@ public class MainPage {
         Mn.setFont(new Font("Arial",H.getFont().getStyle(),17));
         Mn.setMargin(new Insets(0,0,0,0));
 
+        Fe=new JButton("27 Fe");
+        Fe.setFocusable(false);
+        Fe.setForeground(Color.white);
+        Fe.setBackground(Color.GRAY);
+        Fe.setBounds(InitX+GapX*7,InitY+GapY*2,WID,LEN);
+        Fe.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Fe.setMargin(new Insets(0,0,0,0));
+
+        Co=new JButton("Co 28");
+        Co.setFocusable(false);
+        Co.setForeground(Color.white);
+        Co.setBackground(Color.GRAY);
+        Co.setBounds(InitX+GapX*8,InitY+GapY*2,WID,LEN);
+        Co.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Co.setMargin(new Insets(0,0,0,0));
+
+        Ni=new JButton("Ni 29");
+        Ni.setFocusable(false);
+        Ni.setForeground(Color.white);
+        Ni.setBackground(Color.GRAY);
+        Ni.setBounds(InitX+GapX*9,InitY+GapY*2,WID,LEN);
+        Ni.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Ni.setMargin(new Insets(0,0,0,0));
+
+        Cu=new JButton("Cu 30");
+        Cu.setFocusable(false);
+        Cu.setForeground(Color.white);
+        Cu.setBackground(Color.GRAY);
+        Cu.setBounds(InitX+GapX*10,InitY+GapY*2,WID,LEN);
+        Cu.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Cu.setMargin(new Insets(0,0,0,0));
+
+        Sn=new JButton("Sn 31");
+        Sn.setFocusable(false);
+        Sn.setForeground(Color.white);
+        Sn.setBackground(Color.GRAY);
+        Sn.setBounds(InitX+GapX*11,InitY+GapY*2,WID,LEN);
+        Sn.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Sn.setMargin(new Insets(0,0,0,0));
+
+        Ga= new JButton("Ga 32");
+        Ga.setFocusable(false);
+        Ga.setForeground(Color.white);
+        Ga.setBackground(Color.GRAY);
+        Ga.setBounds(InitX+GapX*12,InitY+GapY*2,WID,LEN);
+        Ga.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Ga.setMargin(new Insets(0,0,0,0));
+
+        Ge= new JButton("Ge 33");
+        Ge.setFocusable(false);
+        Ge.setForeground(Color.white);
+        Ge.setBackground(Color.GRAY);
+        Ge.setBounds(InitX+GapX*13,InitY+GapY*2,WID,LEN);
+        Ge.setFont(new Font("Arial",H.getFont().getStyle(),17));
+        Ge.setMargin(new Insets(0,0,0,0));
+
         CurrentFrame.add(K);
         CurrentFrame.add(Na);
         CurrentFrame.add(Li);
@@ -215,6 +281,9 @@ public class MainPage {
         CurrentFrame.add(V);
         CurrentFrame.add(Cr);
         CurrentFrame.add(Mn);
-
+        CurrentFrame.add(Fe);
+        CurrentFrame.add(Co);
+        CurrentFrame.add(Ni);
+        CurrentFrame.add(Cu);
     }
 }
