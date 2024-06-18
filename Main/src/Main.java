@@ -2,7 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import Core.Frame;
 import Elements.MainPage;
-
+/*
+this program draw a periodic table with button
+for this demo, users can click on these buttons
+2024-06-18
+Frank
+ */
 public class Main {
     static public Frame MainFrame;
     static final String TITLE="Periodic table";
